@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"><strong>Brian BIENDOU</strong></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo"> ><strong>Brian BIENDOU</strong></div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/brian2.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Brian BIENDOU</h1>
+        <p class="section__text__p2">Embedded Software Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/CV.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/brian-biendou-429106201/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/brianbiendou'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/brian2.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1+ years <br />Software Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+                <p>
+                  <strong>Engineering in Embedded Systems</strong><br />
+                  <strong style="color: red;">INSA Toulouse</strong>
+                  <img
+                    src="./assets/insa.png"
+                    alt="INSA Toulouse logo"
+                    class="small-icon"
+                    style="width: 50px; height: 50px; vertical-align: middle;"
+                  />
+                </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I'm passionate about coding and new technologies, and I’m constantly seeking challenges
+               to refine my skills in embedded systems development. <strong>My goal?</strong>  Quite simply, to become 
+               an expert engineer in embedded software.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+        <h2 class="experience-sub-title">Embedded System Skills</h2>
+        <div class="article-container">
+          <article>
+          <img
+            src="./assets/checkmark.png"
+            alt="Experience icon"
+            class="icon"
+          />
+          <div>
+            <h3>Python  <img src="./assets/python.png" alt="INSA Toulouse logo" class="small-icon" style="width: 30px; height: 30px; vertical-align: middle;" /></h3>
+            <p>Experienced</p>
+          </div>
+          </article>
+          <article>
+          <img
+            src="./assets/checkmark.png"
+            alt="Experience icon"
+            class="icon"
+          />
+          <div>
+            <h3>C/C+<img src="./assets/c.png" alt="INSA Toulouse logo" class="small-icon" style="width: 50px; height: 40px; vertical-align: middle;" /></h3>
+            <p>Experienced</p>
+          </div>
+          </article>
+          <article>
+          <img
+            src="./assets/checkmark.png"
+            alt="Experience icon"
+            class="icon"
+          />
+          <div>
+            <h3>JAVA          <img src="./assets/java.png" alt="INSA Toulouse logo" class="small-icon" style="width: 30px; height: 20px; vertical-align: middle;" /></h3>
+            <p>Intermediate</p>
+          </div>
+          </article>
+          <article>
+          <img
+            src="./assets/checkmark.png"
+            alt="Experience icon"
+            class="icon"
+          />
+          <div>
+            <h3>JavaScript</h3>
+            <p>Basic</p>
+          </div>
+          </article>
+          <article>
+          <img
+            src="./assets/checkmark.png"
+            alt="Experience icon"
+            class="icon"
+          />
+          <div>
+            <h3>MATLAB</h3>
+            <p>Basic</p>
+          </div>
+          </article>
+          <article>
+          <img
+            src="./assets/checkmark.png"
+            alt="Experience icon"
+            class="icon"
+          />
+          <div>
+            <h3>Arduino</h3>
+            <p>Intermediate</p>
+          </div>
+          </article>
+        </div>
+        </div>
+        <div class="details-container">
+        <h2 class="experience-sub-title">Backend Development</h2>
+        <div class="article-container">
+          <article>
+          <img
+            src="./assets/checkmark.png"
+            alt="Experience icon"
+            class="icon"
+          />
+          <div>
+            <h3>TypeScript</h3>
+            <p>Basic</p>
+          </div>
+          </article>
+          <article>
+          <img
+            src="./assets/checkmark.png"
+            alt="Experience icon"
+            class="icon"
+          />
+          <div>
+            <h3>Node JS</h3>
+            <p>Intermediate</p>
+          </div>
+          </article>
+          <article>
+          <img
+            src="./assets/checkmark.png"
+            alt="Experience icon"
+            class="icon"
+          />
+          <div>
+            <h3>Express JS</h3>
+            <p>Intermediate</p>
+          </div>
+          </article>
+          <article>
+          <img
+            src="./assets/checkmark.png"
+            alt="Experience icon"
+            class="icon"
+          />
+          <div>
+            <h3>Git</h3>
+            <p>Intermediate</p>
+          </div>
+          </article>
+        </div>
+        </div>
+        <div class="details-container">
+        <h2 class="experience-sub-title">Soft Skills</h2>
+        <div class="article-container">
+          <article>
+          <img
+            src="./assets/checkmark.png"
+            alt="Experience icon"
+            class="icon"
+          />
+          <div>
+            <h3>Raisonnement scientifique</h3>
+            <p>Experienced</p>
+          </div>
+          </article>
+          <article>
+          <img
+            src="./assets/checkmark.png"
+            alt="Experience icon"
+            class="icon"
+          />
+          <div>
+            <h3>Force de Proposition / Autonome</h3>
+            <p>Experienced</p>
+          </div>
+          </article>
+          <article>
+          <img
+            src="./assets/checkmark.png"
+            alt="Experience icon"
+            class="icon"
+          />
+          <div>
+            <h3>Connaissances algorithmiques</h3>
+            <p>Experienced</p>
+          </div>
+          </article>
+          <article>
+          <img
+            src="./assets/checkmark.png"
+            alt="Experience icon"
+            class="icon"
+          />
+          <div>
+            <h3>Lecture de DataSheet</h3>
+            <p>Experienced</p>
+          </div>
+          
+          </article>
+        </div>
+        </div>
+      </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+  
+    <section id="projects">
+  <p class="section__text__p1">Browse My Recent</p>
+  <h1 class="title">Parcours Innovative Smart System</h1>
+
+  <div class="project-categories">
+    <div class="category-tab active" onclick="toggleCategory('iot-communicating-systems', this)">
+      Système Communicants pour l'IOT
+    </div>
+    <div class="category-tab" onclick="toggleCategory('iot-informatics-systems', this)">
+      Système Informatique pour l'IOT
+    </div>
+  </div>
+
+  <div id="iot-communicating-systems" class="project-container active">
+    <div class="details-container color-container">
+      <img src="./assets/project-1.png" alt="Smart Devices" class="project-img" />
+      <h2 class="experience-sub-title project-title">Smart Devices</h2>
+      <div class="btn-container">
+        <button class="btn btn-color-2 project-btn">Github</button>
+         
+      </div>
+    </div>
+    <div class="details-container color-container">
+      <img src="./assets/project-1.png" alt="IoT Sensor Hub" class="project-img" />
+      <h2 class="experience-sub-title project-title">Wireless Sensors Network</h2>
+      <div class="btn-container">
+        <a href="https://docs.google.com/document/d/1mqervlZYWPgv25xRPM1BZjedIgECLAayADVZ2Mcwh_w/edit?tab=t.0" 
+           target="_blank" 
+           class="btn btn-color-2 project-btn">
+           Github
+        </a>
+         
+      </div>
+    </div>
+    <div class="details-container color-container">
+      <img src="./assets/project-1.png" alt="Connected Smart Home" class="project-img" />
+      <h2 class="experience-sub-title project-title">Embedded IA for IoT</h2>
+      <div class="btn-container">
+        <button class="btn btn-color-2 project-btn">Github</button>
+         
+      </div>
+    </div>
+    <div class="details-container color-container">
+      <img src="./assets/project-1.png" alt="Advanced IoT Framework" class="project-img" />
+      <h2 class="experience-sub-title project-title">Security for IoT</h2>
+      <div class="btn-container">
+        <button class="btn btn-color-2 project-btn">Github</button>
+         
+      </div>
+    </div>
+    <div class="details-container color-container">
+      <img src="./assets/project-1.png" alt="Advanced IoT Framework" class="project-img" />
+      <h2 class="experience-sub-title project-title">Energy for connected objects</h2>
+      <div class="btn-container">
+        <button class="btn btn-color-2 project-btn">Github</button>
+         
+      </div>
+    </div>
+  </div>
+
+  <div id="iot-informatics-systems" class="project-container">
+    <div class="details-container color-container">
+      <img src="./assets/project-2.png" alt="Communication Protocols" class="project-img" />
+      <h2 class="experience-sub-title project-title">Communication Protocols for LP-WPAN</h2>
+      <div class="btn-container">
+        <button class="btn btn-color-2 project-btn">Github</button>
+         
+      </div>
+    </div>
+    <div class="details-container color-container">
+      <img src="./assets/project-2.png" alt="Cloud IoT Integration" class="project-img" />
+      <h2 class="experience-sub-title project-title">Emerging Network</h2>
+      <div class="btn-container">
+        <button class="btn btn-color-2 project-btn">Github</button>
+         
+      </div>
+    </div>
+    <div class="details-container color-container">
+      <img src="./assets/project-2.png" alt="IoT Data Analytics" class="project-img" />
+      <h2 class="experience-sub-title project-title">5G Technologies</h2>
+      <div class="btn-container">
+        <button class="btn btn-color-2 project-btn">Github</button>
+         
+      </div>
+    </div>
+    <div class="details-container color-container">
+      <img src="./assets/project-2.png" alt="Edge Computing IoT" class="project-img" />
+      <h2 class="experience-sub-title project-title">Service Architecture</h2>
+      <div class="btn-container">
+        <a href="https://docs.google.com/document/d/1d3WOw9a6SA1DaFsaLVaKQ5mIyuBRJjTo5Pki8RvsPxI/edit?tab=t.0" 
+           target="_blank" 
+           class="btn btn-color-2 project-btn">
+           Github
+        </a>
+         
+      </div>
+    </div>
+    <div class="details-container color-container">
+      <img src="./assets/project-2.png" alt="Edge Computing IoT" class="project-img" />
+      <h2 class="experience-sub-title project-title">Middleware for internet of Things</h2>
+      <div class="btn-container">
+        <button class="btn btn-color-2 project-btn">Github</button>
+         
+      </div>
+    </div>
+    <div class="details-container color-container">
+      <img src="./assets/project-2.png" alt="Edge Computing IoT" class="project-img" />
+      <h2 class="experience-sub-title project-title">Cloud and Edge Computing</h2>
+      <div class="btn-container">
+        <a href="https://docs.google.com/document/d/10whQ7TeFrmZqRmhVzVrHjhPEGAcPoqi4-pq8patMMec/edit?tab=t.0#heading=h.3zty32smfutw" 
+           target="_blank" 
+           class="btn btn-color-2 project-btn">
+           Github
+        </a>
+      </div>
+    </div>    
+    <div class="details-container color-container">
+      <img src="./assets/project-2.png" alt="Edge Computing IoT" class="project-img" />
+      <h2 class="experience-sub-title project-title">Innovative Project</h2>
+      <div class="btn-container">
+        <button class="btn btn-color-2 project-btn">Github</button>
+         
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<section id="hobbies">
+  <p class="section__text__p1">THESE HOBBIES ARE THE ONES I LOVE MOST OF ALL</p>
+  <h1 class="title">My Favorite Hobbies.</h1>
+
+  <div class="hobby-container">
+    <div class="hobby-card">
+      <img src="https://via.placeholder.com/300x200" alt="Trading" class="hobby-image" />
+      <div class="hobby-content">
+        <p class="hobby-year">SINCE 2019</p>
+        <h2 class="hobby-title">Trading</h2>
+        <p class="hobby-description">
+          Trading is my passion and I have been doing it every day for 5 years.
+        </p>
+      </div>
+    </div>
+
+    <div class="hobby-card">
+      <img src="https://via.placeholder.com/300x200" alt="Music" class="hobby-image" />
+      <div class="hobby-content">
+        <p class="hobby-year">SINCE 2022</p>
+        <h2 class="hobby-title">Music</h2>
+        <p class="hobby-description">
+          For a while now, I have really enjoyed playing the guitar and piano. It helps me
+          concentrate while having fun.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">clarkybrian@outlook.fr</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/brian-biendou-429106201/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Brian BIENDOU. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
