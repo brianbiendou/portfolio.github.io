@@ -1,8 +1,10 @@
 function toggleMenu() {
   const menu = document.querySelector(".menu-links");
   const icon = document.querySelector(".hamburger-icon");
+
   menu.classList.toggle("open");
   icon.classList.toggle("open");
+  menu.style.display = menu.style.display === "block" ? "none" : "block";
 }
 
 function toggleCategory(categoryId, element) {
@@ -18,6 +20,18 @@ function toggleCategory(categoryId, element) {
   document.getElementById(categoryId).classList.add('active');
   element.classList.add('active');
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll(".card");
+  
+  cards.forEach((card, index) => {
+      setTimeout(() => {
+          card.style.opacity = "1";
+          card.style.transform = "translateY(0)";
+      }, index * 500); // Apparition progressive
+  });
+});
+
 
 // Activer une catégorie par défaut au chargement
 document.addEventListener('DOMContentLoaded', () => {

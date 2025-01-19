@@ -21,6 +21,7 @@ p {
 
 /* TRANSITION */
 
+
 a,
 .btn {
   transition: all 300ms ease;
@@ -589,3 +590,5 @@ footer p {
   font-size: 1rem;
   color: #555;
 }
+
+
